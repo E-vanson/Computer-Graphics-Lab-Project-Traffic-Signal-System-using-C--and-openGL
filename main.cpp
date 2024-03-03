@@ -1,10 +1,10 @@
 //Sadman Sakib Prodhan
 
-
-#include <windows.h>
 #include <iostream>
+#include <GL/glew.h>
 #include <GL/gl.h>
 #include <GL/glut.h>
+#include <cstdlib>
 #define PI 3.1416
 #include <math.h>
 #include <time.h>
@@ -51,16 +51,28 @@ void setFont(void *font)
 	currentfont=font;
 }
 
-void drawstring(float x,float y,float z,char *string)
-{
-	char *c;
-	glRasterPos3f(x,y,z);
+// void drawstring(float x,float y,float z,char *string)
+// {
+// 	char *c;
+// 	glRasterPos3f(x,y,z);
 
-	for(c=string;*c!='\0';c++)
-	{	glColor3f(0.0,0.0,0.0);
-		glutBitmapCharacter(currentfont,*c);
-	}
+// 	for(c=string;*c!='\0';c++)
+// 	{	glColor3f(0.0,0.0,0.0);
+// 		glutBitmapCharacter(currentfont,*c);
+// 	}
+// }
+void drawstring(float x, float y, float z, const char* string) {
+    char c; // Declare `c` as a single character
+    glRasterPos3f(x, y, z);
+
+    while (*string != '\0') {
+        c = *string;  // Assign current character to `c`
+        glColor3f(0.0, 0.0, 0.0);
+        glutBitmapCharacter(currentfont, c);
+        string++;  // Move pointer to the next character
+    }
 }
+
 
 
 float clr(float x)
@@ -81,7 +93,7 @@ void circle(GLdouble rad)
 
     glBegin(GL_POLYGON);
     {
-        for(i = 0; i<=50; i++, theta += delTheta)
+        for(i = 0; i<=points; i++, theta += delTheta)
         {
             glVertex2f(rad * cos(theta),rad * sin(theta));
         }
@@ -91,16 +103,16 @@ void circle(GLdouble rad)
 
 
 
-
+//outling of circle
 void lineCirle(){
     glBegin(GL_LINES);
 	for(int i=0;i<300;i++)
 	{
 		float pi=3.1416;
-		float A=(i*2*pi)/100;
+		float A=(i*2*pi)/100;// A = 0.06283
 		float r=0.95;
-		float x = r * cos(A);
-		float y = r * sin(A);
+		float x = r * cos(A);// X = 9.499999 10 ^ 1 when r = 1
+		float y = r * sin(A);// Y =  1.041791367×10⁻³
 		glVertex2f(x,y );
 	}
 	glEnd();
@@ -108,9 +120,9 @@ void lineCirle(){
 
 
 void sun(){
-
+//249 //215 //28
     glColor3f(clr(249),clr(215),clr(28));//(R,G,B)
-    circle(2);
+    circle(5);
 
 
 }
@@ -120,7 +132,7 @@ void car()
 
     // car body
 
-    glColor3f(clr(0.0),clr(0.0),clr(205.0));
+    glColor3f(clr(0.0),clr(51.0),clr(51.0));
     glBegin(GL_POLYGON);
     glVertex2f(-2.0f,1.0f);
     glVertex2f(-0.14f,1.0f);
@@ -369,10 +381,10 @@ void road(){
     //left road();// right road
 
     glBegin(GL_POLYGON);
-        glVertex2f(40.0f,7.25f);
-        glVertex2f(-40.0f,7.25f);
-        glVertex2f(-40.0f,-10.25f);
-        glVertex2f(40.0f,-10.25f);
+        glVertex2f(40.0f,7.25f);//40.0f,7.25f
+        glVertex2f(-40.0f,7.25f);//-40.0f,7.25f
+        glVertex2f(-40.0f,-10.25f);//-40.0f,-10.25f
+        glVertex2f(40.0f,-10.25f);//40.0f,-10.25f
        // glVertex2f(3.0f,0.0f);
 
     glEnd();
@@ -391,7 +403,7 @@ void road(){
     //middle line left to right
     glColor3f(1.0,1.0,1.0);
     glBegin(GL_LINES);
-      glVertex2f(-3.0f,-1.50f);
+      glVertex2f(3.0f,-1.50f);
       glVertex2f(-40.0f,-1.50f);
     glEnd();
 
@@ -956,22 +968,42 @@ void signal1(float x,float y){
 
 void helpscreen()
 {
+// setFont(GLUT_BITMAP_TIMES_ROMAN_24);
+// glClearColor(0,0,0,0);
+// glClear(GL_COLOR_BUFFER_BIT);
+// glColor3f(0,1,0);
+// drawstring(-5.0, 10.0, 0.0, "Instructions" );
+// glColor3f(0.5,0.1,0.2);
+// drawstring(-7.0, 8.0, 0.0, "Press R for traffic Red Light" /* Correct: const char* */);
+// glColor3f(0.5,0.1,0.3);
+// //drawstring(-7.0,6.0,0.0,"Press O for traffic Orange Light");
+// drawstring(-7.0, 6.0, 0.0, "Press O for traffic Orange Light" /* Correct: const char* */);
+// glColor3f(0.5,0.1,0.4);
+// //drawstring(-7.0,4.0,0.0,"Press G for traffic Green Light");
+// drawstring(-7.0, 4.0, 0.0, "Press G for traffic Green Light" /* Correct: const char* */);
+// glColor3f(1.0,0.0,0.0);
+// //drawstring(-7.0,2.0,0.0,"Press Escape for Exit");
+// drawstring(-7.0, 2.0, 0.0, "Press Escape for Exit" /* Correct: const char* */);
+// glColor3f(0.1333333f,0.5450980392f,0.133333333f);
+// //drawstring(-7.0,-10.0,0.0,"PRESS ENTER TO START");
+// drawstring(-7.0, -10.0, 0.0, "PRESS ENTER TO START" /* Correct: const char* */);
+// glFlush();
 setFont(GLUT_BITMAP_TIMES_ROMAN_24);
-glClearColor(0,0,0,0);
-glClear(GL_COLOR_BUFFER_BIT);
-glColor3f(0,1,0);
-drawstring(-5.0,10.0,0.0,"Instructions");
-glColor3f(0.5,0.1,0.2);
-drawstring(-7.0,8.0,0.0,"Press R for traffic Red Light");
-glColor3f(0.5,0.1,0.3);
-drawstring(-7.0,6.0,0.0,"Press O for traffic Orange Light");
-glColor3f(0.5,0.1,0.4);
-drawstring(-7.0,4.0,0.0,"Press G for traffic Green Light");
-glColor3f(1.0,0.0,0.0);
-drawstring(-7.0,2.0,0.0,"Press Escape for Exit");
-glColor3f(0.1333333f,0.5450980392f,0.133333333f);
-drawstring(-7.0,-10.0,0.0,"PRESS ENTER TO START");
-glFlush();
+    glClearColor(0, 0, 0, 0);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(0, 1, 0);
+    drawstring(-5.0, 10.0, 0.0, "Instructions");  // Corrected: const char*
+    glColor3f(0.5, 0.1, 0.2);
+    drawstring(-7.0, 8.0, 0.0, "Press R for traffic Red Light");  // Corrected: const char*
+    glColor3f(0.5, 0.1, 0.3);
+    drawstring(-7.0, 6.0, 0.0, "Press O for traffic Orange Light");  // Corrected: const char*
+    glColor3f(0.5, 0.1, 0.4);
+    drawstring(-7.0, 4.0, 0.0, "Press G for traffic Green Light");  // Corrected: const char*
+    glColor3f(1.0, 0.0, 0.0);
+    drawstring(-7.0, 2.0, 0.0, "Press Escape for Exit");  // Corrected: const char*
+    glColor3f(0.1333333f, 0.5450980392f, 0.133333333f);
+    drawstring(-7.0, -10.0, 0.0, "PRESS ENTER TO START");  // Corrected: const char*
+    glFlush();
 }
 
 void rules_screen(void){
@@ -980,7 +1012,8 @@ void rules_screen(void){
     glClearColor(0.78877,0.1998765,0.987655441,0);
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3f(1,0,0);
-    drawstring(-10.0,15.0,0.0,"United International University");
+    //drawstring(-10.0,15.0,0.0,"United International University");
+    drawstring(-10.0, 15.0, 0.0, "United International University" /* Correct: const char* */);
 
     glFlush();
 
@@ -1150,13 +1183,14 @@ switch(key)
  }
 
 
-int main()
+int main(int argc, char* argv[])
 {
 
+    glutInit(&argc, argv);
 	glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize (1366, 768);
 	glutInitWindowPosition (20, 40 );
-	glutCreateWindow ("Traffic signal created by Sadman Sakib");
+	glutCreateWindow ("Traffic signal created by Group Six");
 	glutTimerFunc(15, alltransports_move, 1);
 	init();
 	glutKeyboardFunc(my_keyboard);

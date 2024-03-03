@@ -1,0 +1,6 @@
+sudo apt install freeglut3-dev
+#include <GL/glew.h>
+sudo apt install libglu1-mesa libglew-dev freeglut3-dev
+g++ main.cpp -lglut -lGLEW -lGL -o traffic_simulation
+./traffic_simulation
+./traffic_simulation
