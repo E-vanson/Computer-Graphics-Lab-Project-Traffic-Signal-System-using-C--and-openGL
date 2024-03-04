@@ -122,7 +122,7 @@ void lineCirle(){
 void sun(){
 //249 //215 //28
     glColor3f(clr(249),clr(215),clr(28));//(R,G,B)
-    circle(5);
+    circle(2);
 
 
 }
@@ -1024,16 +1024,33 @@ void rules_screen(void){
 void frontscreen(void)
 {
 setFont(GLUT_BITMAP_TIMES_ROMAN_24);
-glClearColor(0.5019607843,0.0,0.5019607843,0);/*background for cover page*/
+glClearColor(0.5019607843,0.5,0.5019607843,0);/*background for cover page*/
 glClear(GL_COLOR_BUFFER_BIT);
 glColor3f(1,0,0);
 drawstring(-5,7,0.0," TRAFFIC SIGNALS");
 glColor3f(1,0.5,0);
 drawstring(-4,4,0.0,"Implimented By:");
-glColor3f(0.1333333f,0.5450980392f,0.133333333f);
-drawstring(-6.50,1,0.0,"Sadman Sakib  ID:011151139");
-glColor3f(0.1333333f,0.5450980392f,0.133333333f);
-drawstring(-6.50,-1,0.0,"Sarah Ali          ID:011151098");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,1,0.0,"1. ELIAS IAN BARASA - EB1/56111/21.");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,-1,0.0,"2. CAROLINE WAIYEGO - EB1/56039/21.");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,-3,0.0,"3. VICTOR KANG’ACHA - EB1/56044/21.");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,-5,0.0,"4. TYRONE MRENJE - EB1/56535/21.");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,-7,0.0,"5. NATHAN MORARA - EB1/56133/21.");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,-9,0.0,"6. VINCENT KYALO - EB1/56103/21.");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,-11,0.0,"7. EVANSON KAMAU - EB1/52855/21.");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,-13,0.0,"8. KEVIN MURIUKI - EB1/56027/21.");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,-15,0.0,"9. MICHELLE NDEGWA - EB1/56095/21.");
+glColor3f(0.0333333f,0.0450980392f,0.33333333f);
+drawstring(-6.50,-17,0.0,"10.EUGENE MUHATI - EB1/37640/18.");
+
 glFlush();
 }
 
