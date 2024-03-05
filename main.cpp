@@ -1050,7 +1050,6 @@ glColor3f(0.0333333f,0.0450980392f,0.33333333f);
 drawstring(-6.50,-15,0.0,"9. MICHELLE NDEGWA - EB1/56095/21.");
 glColor3f(0.0333333f,0.0450980392f,0.33333333f);
 drawstring(-6.50,-17,0.0,"10.EUGENE MUHATI - EB1/37640/18.");
-
 glFlush();
 }
 
