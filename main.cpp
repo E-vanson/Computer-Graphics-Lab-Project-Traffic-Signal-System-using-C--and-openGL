@@ -1054,13 +1054,10 @@ glFlush();
 }
 
 
-
-
-
 void display1(){
 
     glColor3f(0.7,0,1);
-    drawstring(-15.0,8.90,0.0,"United International University");
+    drawstring(-15.0,8.90,0.0,"Chuka University");
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
 
