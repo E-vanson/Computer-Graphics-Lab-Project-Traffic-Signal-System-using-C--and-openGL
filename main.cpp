@@ -132,7 +132,7 @@ void car()
 
     // car body
 
-    glColor3f(clr(0.0),clr(51.0),clr(51.0));
+    glColor3f(clr(51.0),clr(51.0),clr(51.0));
     glBegin(GL_POLYGON);
     glVertex2f(-2.0f,1.0f);
     glVertex2f(-0.14f,1.0f);
@@ -246,7 +246,7 @@ glEnd();
 void brtc_bus(){
 
     // body
-    glColor3f(1.0,0.0,0.0);
+    glColor3f(1.0,0.5,0.0);
     glBegin(GL_POLYGON);
     glVertex2f(-10.30f,15.0f);
     glVertex2f(-20.30f,15.0f);
@@ -257,7 +257,7 @@ void brtc_bus(){
     //bar
 
     //glColor3f(clr(34.0),clr(139.0),clr(34.0);
-    glColor3f(1.0,1.0,0.0);
+    glColor3f(1.0,2.0,0.0);
     glBegin(GL_POLYGON);
     glVertex2f(-10.30f,9.0f);
     glVertex2f(-21.0f,9.0f);
@@ -370,13 +370,13 @@ void road(){
     glColor3f(0.0,0.0,0.0);
     //upper road
 
-    glBegin(GL_POLYGON);
-        glVertex2f(3.0f,35.25f);
-        glVertex2f(-3.0f,35.25f);
-        glVertex2f(-3.0f,0.0f);
-        glVertex2f(3.0f,0.0f);
+    // glBegin(GL_POLYGON);
+    //     glVertex2f(3.0f,35.25f);
+    //     glVertex2f(-3.0f,35.25f);
+    //     glVertex2f(-3.0f,0.0f);
+    //     glVertex2f(3.0f,0.0f);
 
-    glEnd();
+    // glEnd();
 
     //left road();// right road
 
@@ -391,13 +391,13 @@ void road(){
 
     //down road();
 
-    glBegin(GL_POLYGON);
-        glVertex2f(3.0f,-35.25f);
-        glVertex2f(-3.0f,-35.25f);
-        glVertex2f(-3.0f,0.0f);
-        glVertex2f(3.0f,0.0f);
+    // glBegin(GL_POLYGON);
+    //     glVertex2f(3.0f,-35.25f);
+    //     glVertex2f(-3.0f,-35.25f);
+    //     glVertex2f(-3.0f,0.0f);
+    //     glVertex2f(3.0f,0.0f);
 
-    glEnd();
+    // glEnd();
 
 
     //middle line left to right
@@ -415,39 +415,39 @@ void road(){
 
     //middle line lower to upper
 
-    glColor3f(1.0,1.0,1.0);
-    glBegin(GL_LINES);
-      glVertex2f(0.0f,25.30f);
-      glVertex2f(0.0f,7.10f);
-    glEnd();
+    // glColor3f(1.0,1.0,1.0);
+    // glBegin(GL_LINES);
+    //   glVertex2f(0.0f,25.30f);
+    //   glVertex2f(0.0f,7.10f);
+    // glEnd();
 
-    glColor3f(1.0,1.0,1.0);
-    glBegin(GL_LINES);
-      glVertex2f(0.0f,-25.30f);
-      glVertex2f(0.0f,-10.10f);
-    glEnd();
+    // glColor3f(1.0,1.0,1.0);
+    // glBegin(GL_LINES);
+    //   glVertex2f(0.0f,-25.30f);
+    //   glVertex2f(0.0f,-10.10f);
+    // glEnd();
 
 //
-    glColor3f(1.0,1.0,1.0);
-    glBegin(GL_LINE_LOOP);
-      glVertex2f(3.0f,7.20f);
-      glVertex2f(-3.0f,7.20f);
-      glVertex2f(-3.f,-10.20f);
-      glVertex2f(3.f,-10.20f);
-    glEnd();
+    // glColor3f(1.0,1.0,1.0);
+    // glBegin(GL_LINE_LOOP);
+    //   glVertex2f(3.0f,7.20f);
+    //   glVertex2f(-3.0f,7.20f);
+    //   glVertex2f(-3.f,-10.20f);
+    //   glVertex2f(3.f,-10.20f);
+    // glEnd();
 
 
-    glColor3f(1.0,1.0,1.0);
-    glBegin(GL_LINES);
-      glVertex2f(3.0f,7.20f);
-      glVertex2f(-3.f,-10.20f);
-    glEnd();
+    // glColor3f(1.0,1.0,1.0);
+    // glBegin(GL_LINES);
+    //   glVertex2f(3.0f,7.20f);
+    //   glVertex2f(-3.f,-10.20f);
+    // glEnd();
 
-    glColor3f(1.0,1.0,1.0);
-    glBegin(GL_LINES);
-      glVertex2f(-3.0f,7.20f);
-      glVertex2f(3.f,-10.20f);
-    glEnd();
+    // glColor3f(1.0,1.0,1.0);
+    // glBegin(GL_LINES);
+    //   glVertex2f(-3.0f,7.20f);
+    //   glVertex2f(3.f,-10.20f);
+    // glEnd();
 
 
 
@@ -616,90 +616,90 @@ void zebra_crossing(){
 
   //  upperroad
 
-   glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(3.0f,20.20f);
-        glVertex2f(2.0f,20.20f);
-        glVertex2f(2.0f,13.20f);
-        glVertex2f(3.0f,13.20f);
-    glEnd();
+//    glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(3.0f,20.20f);
+//         glVertex2f(2.0f,20.20f);
+//         glVertex2f(2.0f,13.20f);
+//         glVertex2f(3.0f,13.20f);
+//     glEnd();
 
-      glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(3.0f,-20.20f);
-        glVertex2f(2.0f,-20.20f);
-        glVertex2f(2.0f,-13.20f);
-        glVertex2f(3.0f,-13.20f);
-    glEnd();
+//       glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(3.0f,-20.20f);
+//         glVertex2f(2.0f,-20.20f);
+//         glVertex2f(2.0f,-13.20f);
+//         glVertex2f(3.0f,-13.20f);
+//     glEnd();
 
-//
+// //
 
-      glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(1.70f,20.20f);
-        glVertex2f(0.50f,20.20f);
-        glVertex2f(0.50f,13.20f);
-        glVertex2f(1.70f,13.20f);
-    glEnd();
+//       glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(1.70f,20.20f);
+//         glVertex2f(0.50f,20.20f);
+//         glVertex2f(0.50f,13.20f);
+//         glVertex2f(1.70f,13.20f);
+//     glEnd();
 
-       glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(1.70f,-20.20f);
-        glVertex2f(0.50f,-20.20f);
-        glVertex2f(0.50f,-13.20f);
-        glVertex2f(1.70f,-13.20f);
-    glEnd();
-
-
-       glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(0.30f,20.20f);
-        glVertex2f(-0.90f,20.20f);
-        glVertex2f(-0.90f,13.20f);
-        glVertex2f(0.30f,13.20f);
-    glEnd();
-
-    glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(0.30f,-20.20f);
-        glVertex2f(-0.90f,-20.20f);
-        glVertex2f(-0.90f,-13.20f);
-        glVertex2f(0.30f,-13.20f);
-    glEnd();
-
-    //
-    glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(-1.10f,20.20f);
-        glVertex2f(-2.10f,20.20f);
-        glVertex2f(-2.10f,13.20f);
-        glVertex2f(-1.10f,13.20f);
-    glEnd();
-
-     glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(-1.10f,-20.20f);
-        glVertex2f(-2.10f,-20.20f);
-        glVertex2f(-2.10f,-13.20f);
-        glVertex2f(-1.10f,-13.20f);
-    glEnd();
+//        glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(1.70f,-20.20f);
+//         glVertex2f(0.50f,-20.20f);
+//         glVertex2f(0.50f,-13.20f);
+//         glVertex2f(1.70f,-13.20f);
+//     glEnd();
 
 
-     glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(-2.30f,20.20f);
-        glVertex2f(-3.10f,20.20f);
-        glVertex2f(-3.10f,13.20f);
-        glVertex2f(-2.30f,13.20f);
-    glEnd();
+//        glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(0.30f,20.20f);
+//         glVertex2f(-0.90f,20.20f);
+//         glVertex2f(-0.90f,13.20f);
+//         glVertex2f(0.30f,13.20f);
+//     glEnd();
 
-     glColor3f(1.0,1.0,1.0);
-    glBegin(GL_POLYGON);
-        glVertex2f(-2.30f,-20.20f);
-        glVertex2f(-3.10f,-20.20f);
-        glVertex2f(-3.10f,-13.20f);
-        glVertex2f(-2.30f,-13.20f);
-    glEnd();
+//     glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(0.30f,-20.20f);
+//         glVertex2f(-0.90f,-20.20f);
+//         glVertex2f(-0.90f,-13.20f);
+//         glVertex2f(0.30f,-13.20f);
+//     glEnd();
+
+//     //
+//     glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(-1.10f,20.20f);
+//         glVertex2f(-2.10f,20.20f);
+//         glVertex2f(-2.10f,13.20f);
+//         glVertex2f(-1.10f,13.20f);
+//     glEnd();
+
+//      glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(-1.10f,-20.20f);
+//         glVertex2f(-2.10f,-20.20f);
+//         glVertex2f(-2.10f,-13.20f);
+//         glVertex2f(-1.10f,-13.20f);
+//     glEnd();
+
+
+//      glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(-2.30f,20.20f);
+//         glVertex2f(-3.10f,20.20f);
+//         glVertex2f(-3.10f,13.20f);
+//         glVertex2f(-2.30f,13.20f);
+//     glEnd();
+
+//      glColor3f(1.0,1.0,1.0);
+//     glBegin(GL_POLYGON);
+//         glVertex2f(-2.30f,-20.20f);
+//         glVertex2f(-3.10f,-20.20f);
+//         glVertex2f(-3.10f,-13.20f);
+//         glVertex2f(-2.30f,-13.20f);
+//     glEnd();
 
 
 
@@ -722,7 +722,243 @@ void sky(){
 glEnd();
 }
 
+void tree(){
+    glColor3f(0.5, 0.35, 0.05);
+    glBegin(GL_POLYGON);
+    glVertex2f(3.0f,18.22f);
+    glVertex2f(2.0f,18.22f);
+    glVertex2f(2.0f,11.22f);
+    glVertex2f(3.0f,11.22f);
+    glEnd();
 
+    // Draw branches
+    glPushMatrix();
+    glTranslatef(2.0f, 18.22f, 0.0f); // Translate to the top middle of the trunk
+    for (int l = 0; l <= 2; l++) {
+        glColor3f(0.0, 0.5, 0.0);
+        circle(l); // Draw circles as branches
+        glTranslatef(0.3f, -0.3f, 0.0f); // Move to the next branch position
+    }
+    glPopMatrix();
+
+}
+
+void tree1(){
+    glColor3f(0.5, 0.35, 0.05);
+    glBegin(GL_POLYGON);
+    glVertex2f(8.0f,18.22f);
+    glVertex2f(7.0f,18.22f);
+    glVertex2f(7.0f,11.22f);
+    glVertex2f(8.0f,11.22f);
+    glEnd();
+
+    // Draw branches
+    glPushMatrix();
+    glTranslatef(7.0f, 18.22f, 0.0f); // Translate to the top middle of the trunk
+    for (int l = 0; l <= 2; l++) {
+        glColor3f(0.0, 0.5, 0.0);
+        circle(l); // Draw circles as branches
+        glTranslatef(0.3f, -0.3f, 0.0f); // Move to the next branch position
+    }
+    glPopMatrix();
+
+}
+
+void tree2(){
+    glColor3f(0.5, 0.35, 0.05);
+    glBegin(GL_POLYGON);
+    glVertex2f(13.0f,18.22f);
+    glVertex2f(12.0f,18.22f);
+    glVertex2f(12.0f,11.22f);
+    glVertex2f(13.0f,11.22f);
+    glEnd();
+
+    // Draw branches
+    glPushMatrix();
+    glTranslatef(12.0f, 18.22f, 0.0f); // Translate to the top middle of the trunk
+    for (int l = 0; l <= 2; l++) {
+        glColor3f(0.0, 0.5, 0.0);
+        circle(l); // Draw circles as branches
+        glTranslatef(0.3f, -0.3f, 0.0f); // Move to the next branch position
+    }
+    glPopMatrix();
+
+}
+
+void tree3(){
+    glColor3f(0.5, 0.35, 0.05);
+    glBegin(GL_POLYGON);
+    glVertex2f(-2.0f,18.22f);
+    glVertex2f(-3.0f,18.22f);
+    glVertex2f(-3.0f,11.22f);
+    glVertex2f(-2.0f,11.22f);
+    glEnd();
+
+    // Draw branches
+    glPushMatrix();
+    glTranslatef(-3.0f, 18.22f, 0.0f); // Translate to the top middle of the trunk
+    for (int l = 0; l <= 2; l++) {
+        glColor3f(0.0, 0.5, 0.0);
+        circle(l); // Draw circles as branches
+        glTranslatef(0.3f, -0.3f, 0.0f); // Move to the next branch position
+    }
+    glPopMatrix();
+
+}
+
+void tree4(){
+    glColor3f(0.5, 0.35, 0.05);
+    glBegin(GL_POLYGON);
+    glVertex2f(-7.0f,18.22f);
+    glVertex2f(-8.0f,18.22f);
+    glVertex2f(-8.0f,11.22f);
+    glVertex2f(-7.0f,11.22f);
+    glEnd();
+
+    // Draw branches
+    glPushMatrix();
+    glTranslatef(-8.0f, 18.22f, 0.0f); // Translate to the top middle of the trunk
+    for (int l = 0; l <= 2; l++) {
+        glColor3f(0.0, 0.5, 0.0);
+        circle(l); // Draw circles as branches
+        glTranslatef(0.3f, -0.3f, 0.0f); // Move to the next branch position
+    }
+    glPopMatrix();
+
+}
+
+void tree5(){
+    glColor3f(0.5, 0.35, 0.05);
+    glBegin(GL_POLYGON);
+    glVertex2f(18.0f,18.22f);
+    glVertex2f(17.0f,18.22f);
+    glVertex2f(17.0f,11.22f);
+    glVertex2f(18.0f,11.22f);
+    glEnd();
+
+    // Draw branches
+    glPushMatrix();
+    glTranslatef(17.0f, 18.22f, 0.0f); // Translate to the top middle of the trunk
+    for (int l = 0; l <= 2; l++) {
+        glColor3f(0.0, 0.5, 0.0);
+        circle(l); // Draw circles as branches
+        glTranslatef(0.3f, -0.3f, 0.0f); // Move to the next branch position
+    }
+    glPopMatrix();
+
+}
+
+void tree6(){
+    glColor3f(0.5, 0.35, 0.05);
+    glBegin(GL_POLYGON);
+    glVertex2f(23.0f,18.22f);
+    glVertex2f(22.0f,18.22f);
+    glVertex2f(22.0f,11.22f);
+    glVertex2f(23.0f,11.22f);
+    glEnd();
+
+    // Draw branches
+    glPushMatrix();
+    glTranslatef(22.0f, 18.22f, 0.0f); // Translate to the top middle of the trunk
+    for (int l = 0; l <= 2; l++) {
+        glColor3f(0.0, 0.5, 0.0);
+        circle(l); // Draw circles as branches
+        glTranslatef(0.3f, -0.3f, 0.0f); // Move to the next branch position
+    }
+    glPopMatrix();
+
+}
+
+void cloud(){
+    // Draw first row of circles
+    glPushMatrix();
+    glTranslatef(-5.0f, 23.0f, 0.0f); // Translate to the initial position of the first row
+    for (int l = 0; l <= 1; l++) {
+        glColor3f(1.0, 1.0, 1.0);
+        circle(l);
+        glTranslatef(2.0f, 0.0f, 0.0f); // Move to the next circle position
+    }
+    glPopMatrix();
+
+    // Draw second row of circles
+    glPushMatrix();
+    glTranslatef(-4.0f, 22.5f, 0.0f); // Translate to the initial position of the second row
+    for (int l = 0; l <= 2; l++) {
+        glColor3f(1.0, 1.0, 1.0);
+        circle(l);
+        glTranslatef(2.0f, 0.0f, 0.0f); // Move to the next circle position
+    }
+    glPopMatrix();
+
+    // Draw third row of circles
+    glPushMatrix();
+    glTranslatef(-4.0f, 23.0f, 0.0f); // Translate to the initial position of the third row
+    for (int l = 0; l <= 1; l++) {
+        glColor3f(1.0, 1.0, 1.0);
+        circle(l);
+        glTranslatef(2.0f, 0.0f, 0.0f); // Move to the next circle position
+    }
+    glPopMatrix();            //cloud2
+}
+
+void cloud1(){
+     // Draw first row of circles
+    glPushMatrix();
+    glTranslatef(-12.0f, 23.0f, 0.0f); // Translate to the initial position of the first row
+    for (int l = 0; l <= 1; l++) {
+        glColor3f(1.0, 1.0, 1.0);
+        circle(l);
+        glTranslatef(2.0f, 0.0f, 0.0f); // Move to the next circle position
+    }
+    glPopMatrix();
+
+    // Draw second row of circles
+    glPushMatrix();
+    glTranslatef(-11.0f, 22.5f, 0.0f); // Translate to the initial position of the second row
+    for (int l = 0; l <= 2; l++) {
+        glColor3f(1.0, 1.0, 1.0);
+        circle(l);
+        glTranslatef(2.0f, 0.0f, 0.0f); // Move to the next circle position
+    }
+    glPopMatrix();
+
+    // Draw third row of circles
+    glPushMatrix();
+    glTranslatef(-11.0f, 23.0f, 0.0f); // Translate to the initial position of the third row
+    for (int l = 0; l <= 1; l++) {
+        glColor3f(1.0, 1.0, 1.0);
+        circle(l);
+        glTranslatef(2.0f, 0.0f, 0.0f); // Move to the next circle position
+    }
+    glPopMatrix();  
+}
+
+// void pond(){
+//    glColor3f(0.0, 0.0, 0.4);
+//     glBegin(GL_POLYGON);
+//     glVertex2f(-12.0f, 18.22f);
+//     glVertex2f(-12.0f, 43.22f);
+//     glVertex2f(13.0f, 68.22f);
+//     glVertex2f(38.0f, 78.22f);
+//     glVertex2f(63.0f, 88.22f);
+//     glVertex2f(163.0f, 88.22f);
+//     glVertex2f(188.0f, 78.22f);
+//     glVertex2f(213.0f, 73.22f);
+//     glVertex2f(238.0f, 58.22f);
+//     glVertex2f(263.0f, 43.22f);
+//     glVertex2f(273.0f, 18.22f);
+//     glVertex2f(263.0f, -12.78f);
+//     glVertex2f(238.0f, -32.78f);
+//     glVertex2f(213.0f, -37.78f);
+//     glVertex2f(188.0f, -42.78f);
+//     glVertex2f(163.0f, -47.78f);
+//     glVertex2f(138.0f, -47.78f);
+//     glVertex2f(113.0f, -47.78f);
+//     glVertex2f(88.0f, -37.78f);
+//     glVertex2f(63.0f, -27.78f);
+//     glVertex2f(38.0f, -17.78f);
+//     glEnd();
+// }
 
 void field(){
 
@@ -989,18 +1225,18 @@ void helpscreen()
 // drawstring(-7.0, -10.0, 0.0, "PRESS ENTER TO START" /* Correct: const char* */);
 // glFlush();
 setFont(GLUT_BITMAP_TIMES_ROMAN_24);
-    glClearColor(0, 0, 0, 0);
+    glClearColor(0.5019607843,0.5,0.5019607843,0);
     glClear(GL_COLOR_BUFFER_BIT);
-    glColor3f(0, 1, 0);
+    glColor3f(0.5019607843,0.5,0.5019607843);
     drawstring(-5.0, 10.0, 0.0, "Instructions");  // Corrected: const char*
-    glColor3f(0.5, 0.1, 0.2);
+    glColor3f(1.0, 0.1, 0.2);
     drawstring(-7.0, 8.0, 0.0, "Press R for traffic Red Light");  // Corrected: const char*
-    glColor3f(0.5, 0.1, 0.3);
+    glColor3f(7.0, 5.1, 0.3);
     drawstring(-7.0, 6.0, 0.0, "Press O for traffic Orange Light");  // Corrected: const char*
-    glColor3f(0.5, 0.1, 0.4);
+    glColor3f(0.5, 7.1, 0.4);
     drawstring(-7.0, 4.0, 0.0, "Press G for traffic Green Light");  // Corrected: const char*
     glColor3f(1.0, 0.0, 0.0);
-    drawstring(-7.0, 2.0, 0.0, "Press Escape for Exit");  // Corrected: const char*
+    drawstring(0.5, 2.0, 0.0, "Press Escape for Exit");  // Corrected: const char*
     glColor3f(0.1333333f, 0.5450980392f, 0.133333333f);
     drawstring(-7.0, -10.0, 0.0, "PRESS ENTER TO START");  // Corrected: const char*
     glFlush();
@@ -1012,8 +1248,8 @@ void rules_screen(void){
     glClearColor(0.78877,0.1998765,0.987655441,0);
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3f(1,0,0);
-    //drawstring(-10.0,15.0,0.0,"United International University");
-    drawstring(-10.0, 15.0, 0.0, "United International University" /* Correct: const char* */);
+
+    drawstring(-10.0, 15.0, 0.0, "Chuka University" /* Correct: const char* */);
 
     glFlush();
 
@@ -1027,7 +1263,7 @@ setFont(GLUT_BITMAP_TIMES_ROMAN_24);
 glClearColor(0.5019607843,0.5,0.5019607843,0);/*background for cover page*/
 glClear(GL_COLOR_BUFFER_BIT);
 glColor3f(1,0,0);
-drawstring(-5,7,0.0," TRAFFIC SIGNALS");
+drawstring(-5,7,0.0," TRAFFIC LIGHT SYSTEM");
 glColor3f(1,0.5,0);
 drawstring(-4,4,0.0,"Implimented By:");
 glColor3f(0.0333333f,0.0450980392f,0.33333333f);
@@ -1064,6 +1300,20 @@ void display1(){
 
     field();
     sky();
+    tree();
+    tree1();
+    tree2();
+    tree3();
+    tree4();
+    tree5();
+    tree6();
+
+   
+
+
+    //glPushMatrix();
+    
+    //glPopMatrix();
 
 
     glMatrixMode(GL_MODELVIEW); //Switch to the drawing perspective
@@ -1079,10 +1329,20 @@ void display1(){
     sun();
     glPopMatrix();
 
+    //glPushMatrix();
+    //glTranslatef(-15.0,22.0,0.0);
+    cloud();
+    //glPopMatrix();
 
-    glPushMatrix();
-    signal1(-80.0,-35.0);
-    glPopMatrix();
+   // glPushMatrix();
+    //glTranslatef(-10.0,22.0,0.0);
+    cloud1();
+   // glPopMatrix();
+
+
+     //glPushMatrix();
+     //signal1(-80.0,-35.0);
+    // glPopMatrix();
 
 
 
@@ -1203,7 +1463,7 @@ int main(int argc, char* argv[])
 	glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize (1366, 768);
 	glutInitWindowPosition (20, 40 );
-	glutCreateWindow ("Traffic signal created by Group Six");
+	glutCreateWindow ("Traffic light system created by Group Six");
 	glutTimerFunc(15, alltransports_move, 1);
 	init();
 	glutKeyboardFunc(my_keyboard);
